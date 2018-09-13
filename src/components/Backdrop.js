@@ -1,10 +1,12 @@
 import React, { Component } from "react";
 import { StyleSheet, View } from "react-native";
 import { RNCamera  } from 'react-native-camera';
+import { ViroVRSceneNavigator, ViroARSceneNavigator } from 'react-viro';
 import Unicorn from './Unicorn.js';
 import { getRandomNumber, deviceHeight, deviceWidth } from "../utils/utils";
 
 const randomYVariable = getRandomNumber(-10, 10); //Random Y between -10 and 10
+const apiKey = '50EF9586-C367-4A82-B110-79B6B9471439';
 class Backdrop extends Component {
   render() {
     const { y } = this.props;
@@ -40,7 +42,11 @@ class Backdrop extends Component {
           justifyContent: 'center' }} 
         />
         {showUnicorn &&
-          <Unicorn />}
+          <ViroARSceneNavigator 
+            apiKey={apiKey}
+            initialScene={{ scene: InitialARScene }} 
+          />
+        }
     </View>
     );
   }
