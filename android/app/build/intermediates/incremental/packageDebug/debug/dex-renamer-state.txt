@@ -1,4 +1,4 @@
-#Tue Sep 11 17:06:27 CDT 2018
-base.0=/Users/ecortez/Documents/Projects/Personal/react-native/hideNseekV2/android/app/build/intermediates/transforms/dexMerger/debug/0
+#Fri Sep 14 15:05:50 CDT 2018
+base.0=/Users/ecortez/Documents/Projects/Personal/react-native/hideNseekAR/android/app/build/intermediates/transforms/dexMerger/debug/0
 path.0=classes.dex
 renamed.0=classes.dex
